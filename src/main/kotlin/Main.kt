@@ -2,7 +2,7 @@ package org.example
 
 fun main() {
     //val start = System.nanoTime()
-    println("testar lite ha sa kul detta blev".remap())
+    println("testar lite ha sa kul detta blev".map())
     /*val time = System.nanoTime() - start
     println("Ran for: $time ns")
     println("Ran for: ${time / 1000} us")
@@ -24,4 +24,4 @@ val mapping: (Char) -> Char = { char ->
     }
 }
 
-fun String.remap() = DefaultMapper(mapping).remap(this)
+fun String.map() = DefaultMapper(mapping).map(this)

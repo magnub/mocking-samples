@@ -1,14 +1,14 @@
 package org.example
 
 interface Mapper {
-    // Convert input string to a new string
-    fun remap(input: String): String
+    // Convert input string different string
+    fun map(input: String): String
 }
 
 class DefaultMapper(
     val mapping: (Char) -> Char = defaultMapping
 ) : Mapper {
-    override fun remap(input: String) =
+    override fun map(input: String) =
         input.toCharArray().map {
             mapping(it)
         }.joinToString(separator = "")
