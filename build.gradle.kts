@@ -1,12 +1,12 @@
 import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
 
 plugins {
-    kotlin("jvm") version "2.0.20"
+    kotlin("jvm") version "2.0.21"
 }
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
-val mockkVersion = "1.13.12"
+val mockkVersion = "1.13.13"
 
 repositories {
     mavenCentral()
